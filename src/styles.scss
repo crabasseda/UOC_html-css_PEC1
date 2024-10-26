@@ -1,0 +1,97 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Estructura de la página completa */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Fondo de la página (cuerpo principal) */
+.background {
+  background-image: url("assets/paseo-por-egipto__1280x720.jpg");
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 30vw;
+  color: white;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  margin: 0;
+}
+
+/* Cabecera y menú */
+header {
+  background: linear-gradient(to bottom, #6a241e, #9a4504);
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #6a241e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
