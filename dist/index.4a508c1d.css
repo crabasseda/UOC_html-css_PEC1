@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.background {
+  text-align: center;
+  background-image: url("paseo-por-egipto__1280x720.882e26fd.jpg");
+  background-position: center;
+  background-size: cover;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.main-title {
+  color: #fff;
+  text-shadow: 10px 10px 20px #000000b3;
+  z-index: 1;
+  margin: 0;
+  font-family: Papyrus;
+  font-size: 30vw;
+}
+
+.header {
+  background: linear-gradient(45deg, #9d512e, tan);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+
+nav ul {
+  gap: 80px;
+  list-style: none;
+  display: flex;
+}
+
+nav ul a {
+  color: #fff;
+  padding: 5px 10px;
+  font-family: fantasy;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color .3s, background-color .3s;
+}
+
+nav ul a:hover {
+  color: #543001;
+}
+
+footer {
+  text-align: center;
+  background: linear-gradient(45deg, #9d512e, tan);
+  width: 100%;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #fff;
+  font-family: fantasy;
+  text-decoration: none;
+  list-style: none;
+}
+
+footer a:hover {
+  color: #543001;
+}
+
+@media (width <= 768px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul a {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+main {
+  flex: 1;
+  padding: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  overflow-y: auto;
+}
+
+h1 {
+  padding: 10px 0;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+p {
+  font-size: large;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li h3 {
+  padding: 10px 0;
+  font-size: x-large;
+}
+
+ul li h3 a {
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+
+ul li h3 a:hover {
+  color: #543001;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+article section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #000;
+  border-bottom: 2px solid #ddd;
+  margin-top: 50px;
+  padding-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.article-text p {
+  text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: large;
+}
+
+.article-list ul li {
+  color: #000;
+  background-color: #f9f9f9;
+  border-left: 4px solid #9d512e;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 8px;
+  padding: 12px 16px;
+  transition: background-color .3s;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.other-sections h3 {
+  font-size: large;
+}
+
+.other-sections ul, .article-list ul, .organization-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.other-sections li {
+  margin-bottom: 15px;
+}
+
+.presentation section h2 {
+  margin-top: 20px;
+}
+
+.organization-list li {
+  border-left: 4px solid #9d512e;
+  margin: 10px 0;
+  padding: 8px 15px;
+  font-size: 18px;
+}
+
+.travel-card {
+  background-color: tan;
+  border-radius: 5px;
+  margin: 30px 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+  background-color: #b89d7b;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px #0003;
+}
+
+.btn-more-info {
+  color: #fff;
+  cursor: pointer;
+  background-color: #9d512e;
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 12px 25px;
+  font-size: 18px;
+  transition: background-color .3s, transform .3s;
+  display: block;
+}
+
+.btn-more-info:hover {
+  background-color: #543001;
+  transform: scale(1.05);
+}
+
+.more-info {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  display: none;
+}
+
+.travel-list li {
+  margin: 10px 0;
+  padding: 8px 15px;
+  font-size: 18px;
+  list-style-type: square;
+}
+
+.travel-recomended li {
+  margin: 10px 0;
+  padding: 8px 15px;
+  font-size: 18px;
+}
+
+figure {
+  text-align: center;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+figure img {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+figcaption {
+  color: #666;
+  margin-top: 8px;
+  font-size: .9em;
+}
+
+.video-container {
+  background: #000;
+  border-radius: 8px;
+  max-width: 100%;
+  height: 0;
+  margin: 20px 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.video-container iframe {
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=index.4a508c1d.css.map */
