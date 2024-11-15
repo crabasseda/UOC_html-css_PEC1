@@ -5,8 +5,8 @@
 }
 
 html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 body {
@@ -23,6 +23,7 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
+  height: 70%;
   display: flex;
 }
 
@@ -54,7 +55,7 @@ nav ul a {
   color: #fff;
   padding: 5px 10px;
   font-family: fantasy;
-  font-size: 18px;
+  font-size: large;
   font-weight: bold;
   text-decoration: none;
   transition: color .3s, background-color .3s;
@@ -88,14 +89,31 @@ footer a:hover {
   }
 
   nav ul a {
-    font-size: 16px;
+    font-size: medium;
   }
 }
 
 @media (width <= 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+
+  footer a {
+    font-size: small;
+  }
+
   nav ul {
     flex-direction: column;
     align-items: center;
+    gap: 2px;
+  }
+
+  nav ul a {
+    font-size: small;
   }
 }
 
@@ -128,7 +146,6 @@ ul li h3 {
 ul li h3 a {
   color: #000;
   text-decoration: none;
-  list-style: none;
 }
 
 ul li h3 a:hover {
@@ -137,14 +154,10 @@ ul li h3 a:hover {
   text-decoration: underline;
 }
 
-article section {
-  margin-bottom: 20px;
-}
-
 section h2 {
   color: #000;
   border-bottom: 2px solid #ddd;
-  margin-top: 50px;
+  margin-top: 30px;
   padding-bottom: 15px;
   font-size: 1.5em;
 }
@@ -250,6 +263,20 @@ section h2 {
   margin: 10px 0;
   padding: 8px 15px;
   font-size: 18px;
+}
+
+.links ul li {
+  margin-top: 20px;
+  margin-left: 10px;
+  list-style: disc;
+}
+
+.links ul li a {
+  text-decoration: none;
+}
+
+.source p {
+  margin-top: 10px;
 }
 
 figure {

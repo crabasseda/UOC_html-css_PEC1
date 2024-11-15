@@ -101,14 +101,14 @@ footer {
 
 /* Responsive styles */
 
-// @media (max-width: 768px) {
-//   nav ul {
-//     gap: 10px;
-//     a {
-//       font-size: 16px;
-//     }
-//   }
-// }
+@media (max-width: 768px) {
+  nav ul {
+    gap: 10px;
+    a {
+      font-size: medium;
+    }
+  }
+}
 
 @media (max-width: 480px) {
   .header {
